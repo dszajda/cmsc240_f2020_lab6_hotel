@@ -89,11 +89,11 @@ int main()
 
    // using empty IntegerVector, test appending cv & dv from above 
    IntegerVector iv2;
-
+   iv2.appendDoubleVector(dv);
    std::cout << std::endl;
    std::cout << "--------------------------" << std::endl;
    std::cout << "appended-to IntegerVector:" << std::endl;
-   std::cout << iv2.size() << " " << "The result should be:" << "3" << std::endl;
+   std::cout << iv2.size() << " " << "The result should be:" << "4" << std::endl;
    std::cout << iv2.get(0) << " " << "The result should be:" << "0" << std::endl;
    std::cout << iv2.get(1) << " " << "The result should be:" << "2" << std::endl;
 
