@@ -30,10 +30,12 @@ int main()
    //-------------------------------------------------------------------------
 
    // test IntegerVector: put, get, size, out_of_range
-
+   iv.put(5);
+   iv.put(2);
+   iv.put(8,0);
    std::cout << "--------------" << std::endl;
-   std::cout << "IntegerVector:" << std::endl;
-   std::cout << "--------------" << std::endl;
+   std::cout << "IntegerVector:" << iv.get(1)<< iv.get(55)<< std::endl;
+   std::cout << "Size" <<iv.size() << std::endl;
 
    //-------------------------------------------------------------------------
 
