@@ -45,17 +45,22 @@ int main()
    //-------------------------------------------------------------------------
 
    // test IntegerVector: put, get, size, out_of_range
-   IntegerVector iv2;
 
-   iv2.appendDoubleVector(dv);
-   std::cout << std::endl;
-   std::cout << "--------------------------" << std::endl;
-   std::cout << "appended-to IntegerVector:" << std::endl;
-   std::cout << iv2.size() << " " << "The result should be:" << "3" << std::endl;
-   std::cout << iv2.get(0) << " " << "The result should be:" << "0" << std::endl;
-   std::cout << iv2.get(1) << " " << "The result should be:" << "2" << std::endl;
+   std::cout << "--------------" << std::endl;
 
-   std::cout << "--------------------------" << std::endl;
+   std::cout << iv.size() << " " << "The result should be:" << " 0" << std::endl;
+   iv.put(1);
+   std::cout << iv.size() << " " << "The result should be:" << " 1" << std::endl;
+   std::cout << iv.get(0) << " " << "The result should be:" << " 1" << std::endl;
+   iv.put(4);
+   iv.put(8);
+   std::cout << iv.get(1) << " " << "The result should be:" << " 4" << std::endl;
+   std::cout << iv.get(2) << " " << "The result should be:" << " 8" << std::endl;
+
+   iv.put(11, 0);
+   std::cout << iv.get(0) << " " << "The result should be:" << "11" << std::endl;
+
+   std::cout << "--------------" << std::endl;
    //-------------------------------------------------------------------------
 
    // using empty CharacterVector, test appending iv & dv from above
