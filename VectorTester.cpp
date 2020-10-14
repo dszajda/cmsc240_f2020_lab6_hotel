@@ -38,6 +38,7 @@ int main()
    dv.put(4.4, 3);
    dv.put(0.0, 0);
    std::cout << dv.get(0) << " " << "The result should be:" << " 0.0" << std::endl;
+   std::cout << dv.get(3) << " " << "The result should be:" << " 4.4" << std::endl;
 
    std::cout << "-------------" << std::endl;
 
@@ -47,9 +48,6 @@ int main()
    iv.put(5);
    iv.put(2);
    iv.put(8,0);
-   std::cout << "--------------" << std::endl;
-   std::cout << "IntegerVector:" << iv.get(1)<< iv.get(55)<< std::endl;
-   std::cout << "Size" <<iv.size() << std::endl;
 
    //-------------------------------------------------------------------------
 
@@ -70,7 +68,8 @@ int main()
    std::cout << "-------------------------" << std::endl;
    std::cout << "appended-to DoubleVector:" << std::endl;
    dv2.appendIntegerVector(iv);
-   dv2.appendCharacterVector(cv);
+   std::cout << dv2.get(0) << " " << "The result should be:" << " 8.0" << std::endl;
+   std::cout << dv2.get(1) << " " << "The result should be:" << " 2.0" << std::endl;
 
    std::cout << "-------------------------" << std::endl;
 
