@@ -25,6 +25,20 @@ int main()
    std::cout << std::endl;
    std::cout << "-------------" << std::endl;
    std::cout << "DoubleVector:" << std::endl;
+
+   std::cout << dv.size() << " " << "The result should be:" << " 0" << std::endl;
+   dv.put(1.1);
+   std::cout << dv.size() << " " << "The result should be:" << " 1" << std::endl;
+   std::cout << dv.get(0) << " " << "The result should be:" << " 1.1" << std::endl;
+   dv.put(2.2);
+   dv.put(3.3);
+   std::cout << dv.get(1) << " " << "The result should be:" << " 2.2" << std::endl;
+   std::cout << dv.get(2) << " " << "The result should be:" << " 3.3" << std::endl;
+  
+   dv.put(4.4, 3);
+   dv.put(0.0, 0);
+   std::cout << dv.get(0) << " " << "The result should be:" << " 0.0" << std::endl;
+
    std::cout << "-------------" << std::endl;
 
    //-------------------------------------------------------------------------
@@ -55,6 +69,9 @@ int main()
    std::cout << std::endl;
    std::cout << "-------------------------" << std::endl;
    std::cout << "appended-to DoubleVector:" << std::endl;
+   dv2.appendIntegerVector(iv);
+   dv2.appendCharacterVector(cv);
+
    std::cout << "-------------------------" << std::endl;
 
    //-------------------------------------------------------------------------
