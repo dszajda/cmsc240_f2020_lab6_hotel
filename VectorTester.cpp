@@ -67,6 +67,9 @@ int main()
    std::cout << std::endl;
    std::cout << "-------------------------" << std::endl;
    std::cout << "appended-to DoubleVector:" << std::endl;
+   dv2.appendIntegerVector(iv);
+   dv2.appendCharacterVector(cv);
+
    std::cout << "-------------------------" << std::endl;
 
    //-------------------------------------------------------------------------
